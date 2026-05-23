@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Alex Carter — Frontend Developer",
+  title: "Rodina ElNaggar — Frontend Developer | Media Buyer",
   description:
     "Senior Frontend Engineer specializing in Next.js, TypeScript, and Tailwind CSS. Building production-ready web apps with exceptional performance and beautiful UI.",
   keywords: [
@@ -16,31 +16,31 @@ export const metadata: Metadata = {
     "UI Engineer",
     "Web Developer",
   ],
-  authors: [{ name: "Alex Carter" }],
-  creator: "Alex Carter",
+  authors: [{ name: "Rodina" }],
+  creator: "Rodina ElNaggar",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://alexcarter.dev",
-    title: "Alex Carter — Frontend Developer",
+    url: "https://rodinaelnaggar.dev",
+    title: "Rodina ElNaggar — Frontend Developer",
     description:
       "Senior Frontend Engineer specializing in Next.js, TypeScript, and Tailwind CSS.",
-    siteName: "Alex Carter Portfolio",
+    siteName: "Rodina ElNaggar Portfolio",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Alex Carter — Frontend Developer",
+        alt: "Rodina ElNaggar — Frontend Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Carter — Frontend Developer",
+    title: "Rodina ElNaggar— Frontend Developer | Media Buyer",
     description:
       "Senior Frontend Engineer specializing in Next.js, TypeScript, and Tailwind CSS.",
-    creator: "@alexcarter_dev",
+    creator: "@rodinaelnaggar",
     images: ["/og.png"],
   },
   robots: {

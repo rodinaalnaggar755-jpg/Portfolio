@@ -3,11 +3,14 @@ import { motion } from "framer-motion";
 
 const techOrbs = [
   { icon: "⬛", label: "Next.js 14" },
-  { icon: "🔷", label: "TypeScript" },
-  { icon: "🌊", label: "Tailwind CSS" },
   { icon: "⚛️", label: "React 18" },
+  { icon: "🔷", label: "TypeScript" },
   { icon: "🎬", label: "Framer Motion" },
-  { icon: "🔷", label: "JavaScript" }
+  { icon: "🌊", label: "Tailwind CSS" },
+  { icon: "🔷", label: "JavaScript" },
+  { icon: "🔷", label: "CSS" },
+  { icon: "🔷", label: "HTML5" },
+
 ];
 
 export default function HeroSection() {
@@ -56,8 +59,8 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg text-slate-400 max-w-lg mb-8 leading-relaxed"
           >
-            I craft production-ready web apps with obsessive attention to performance, accessibility, and delightful interactions. Next.js. TypeScript. Pixel-perfect.
-          </motion.p>
+                  I build high-performance, visually stunning web applications with a strong focus on UX . Combining frontend development mastery with media buying expertise .   
+             </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -6,34 +6,21 @@ import SectionHeader from "./SectionHeader";
 
 
 const experiences = [
-  {
-    date: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Vercel-Partner Agency · Remote",
-    description: "Led frontend architecture for 8 SaaS products. Migrated a legacy React CRA app to Next.js App Router, improving LCP by 62%. Mentored 3 junior devs. Owned design system used across 4 products.",
-    tags: ["Next.js 14", "TypeScript", "Tailwind", "tRPC", "Storybook"],
-  },
-  {
-    date: "2020 — 2022",
-    role: "Frontend Developer",
-    company: "FinTech Startup · Cairo, EG",
-    description: "Built the investor-facing dashboard from scratch. Implemented real-time data with WebSockets, complex charts with D3.js, and accessibility compliance (WCAG 2.1 AA). Reduced bundle size by 45%.",
-    tags: ["React", "Redux Toolkit", "D3.js", "WebSockets", "Jest", "WCAG"],
-  },
-  {
-    date: "2023 — 2024",
-    role: "Junior Frontend Developer",
-    company: "Digital Agency · Freelance",
-    description: "Delivered 20+ client websites with pixel-perfect fidelity from Figma designs. First professional exposure to performance optimization, SEO, and responsive design systems.",
-    tags: ["React", "SCSS", "Gatsby", "GraphQL", "Figma"],
-  },
-  {
+   {
     date: "2022 — 2025",
     role: "Management Technology and Information Systems",
-    company: "PortSaid University · GPA 3.4 / 4.0",
-    description: "Graduated with honors. Senior thesis on adaptive UI rendering for low-bandwidth environments. Vice-president of the ACM Student Chapter. Hackathon winner × 3.",
-    tags: ["Algorithms", "HCI", "Systems"],
+    company: "PortSaid University · GPA 3.5 / 4.0",
+    description: "Earned a Bachelor's degree with a focus on bridging the gap between business management and information technology. Studied core concepts of systems analysis, and business optimization strategies while maintaining a 3.5/4.0 GPA.",
+    tags: ["Information Systems", "Artificial intelligence", "Database Management", "Software Development Life Cycle (SDLC)", "Accounting" , "Economy"],
   },
+  {
+    date: "2025 — Present",
+    role: "Media Buyer",
+    company: "The Best Construction - On site",
+    description: "Developed and executed targeted lead-generation campaigns across Meta , Google & LinkedIn Ads to drive sales for high-value real estate projects. Analyzed performance metrics, optimized ad spend, and implemented SEO strategies and maximize ROI.",
+    tags: ["Meta Ads", "LinkedIn Ads", "Google Ads", "SEO"],
+  },
+ 
 ];
 
 

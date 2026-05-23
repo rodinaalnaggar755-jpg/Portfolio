@@ -11,10 +11,11 @@ const skills = [
     icon: "⚛️",
     color: "blue",
     items: [
-      { name: "React / Next.js", pct: 95 },
+      { name: "Next.js / React", pct: 95 },
       { name: "TypeScript", pct: 93 },
       { name: "Tailwind CSS", pct: 99 },
-      { name: "HTML / CSS / JS", pct: 99 },
+      { name: "HTML / CSS", pct: 98 },
+      { name: "JavaScript", pct: 93 },
     ],
   },
   {
@@ -34,22 +35,10 @@ const skills = [
     color: "green",
     items: [
       { name: "Core Web Vitals", pct: 95 },
-      { name: "Testing (Jest/Playwright)", pct: 85 },
+      { name: "Testing (Jest/Playwright)", pct: 90 },
       { name: "CI/CD / GitHub Actions", pct: 82 },
-      { name: "Accessibility (WCAG)", pct: 90 },
     ],
   },
-  // {
-  //   category: "Backend & Data",
-  //   icon: "🗄️",
-  //   color: "amber",
-  //   items: [
-  //     { name: "Node.js / tRPC", pct: 78 },
-  //     { name: "PostgreSQL / Prisma", pct: 75 },
-  //     { name: "GraphQL / REST", pct: 80 },
-  //     { name: "Vercel / AWS", pct: 83 },
-  //   ],
-  // },
 ];
 
 function SkillBar({ name, pct }: { name: string; pct: number }) {
@@ -65,8 +54,8 @@ function SkillBar({ name, pct }: { name: string; pct: number }) {
       <div className="h-1.5 bg-white/10 rounded-md overflow-hidden">
         <motion.div
           ref={ref}
-          initial={{ scaleX: 0 }}
-          animate={isInView ? { scaleX: 1 } : {}}
+          initial={{ width: 0 }}
+          animate={isInView ? { width: `${pct}%` } : {}}
           transition={{ duration: 1.2, ease: [0.4, 0, 0.2, 1] }}
           className="h-full rounded-md bg-gradient-to-r from-blue-500 to-purple-500 origin-left"
           style={{ transform: `scaleX(${pct / 100})` }}
@@ -136,18 +125,17 @@ export default function Skills() {
             <span className="ml-3 text-xs text-slate-400 font-mono">portfolio/app/page.tsx</span>
           </div>
           <div className="p-5 font-mono text-sm leading-relaxed text-slate-400">
-            <div><span className="text-slate-500">// Server Component — zero client JS by default</span></div>
             <div><span className="text-purple-400">export async function</span> <span className="text-blue-400">generateMetadata</span>() {"{"}</div>
             <div className="pl-4"><span className="text-purple-400">return</span> {"{"}</div>
-            <div className="pl-8">title: <span className="text-green-400">'Rodina EL_Naggar · Frontend Dev'</span>,</div>
+            <div className="pl-8">title: <span className="text-green-400">'Rodina EL_Naggar | Frontend Developer & Media Buyer'</span>,</div>
             <div className="pl-8">description: <span className="text-green-400">'Building fast, beautiful UIs'</span>,</div>
             <div className="pl-8">openGraph: {'{'} images: ["/og.png"] {'}'}</div>
             <div className="pl-4">{"}"}</div>
             <div>{"}"}</div>
             <br />
-            <div><span className="text-purple-400">export default function</span> <span className="text-blue-400">Page</span>() {"{"}</div>
+            {/* <div><span className="text-purple-400">export default function</span> <span className="text-blue-400">Page</span>() {"{"}</div>
             <div className="pl-4"><span className="text-purple-400">return</span> &lt;<span className="text-blue-400">HeroSection</span> /&gt;</div>
-            <div>{"}"}</div>
+            <div>{"}"}</div> */}
           </div>
         </motion.div>
       </div>

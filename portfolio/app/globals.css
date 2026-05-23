@@ -148,11 +148,4 @@ body::before {
   to { stroke-dashoffset: 0; }
 }
 
-/* Light mode overrides */
-.light body {
-  background: #f1f5f9;
-}
-.light .glass {
-  background: rgba(0, 0, 0, 0.03);
-  border-color: rgba(0, 0, 0, 0.08);
-}
+

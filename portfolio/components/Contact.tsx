@@ -95,7 +95,7 @@ export default function Contact() {
                 type="email"
                 value={formState.email}
                 onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                placeholder="jane@company.com"
+                placeholder="jane@gmail.com"
                 className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-slate-200 focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
                 required
               />

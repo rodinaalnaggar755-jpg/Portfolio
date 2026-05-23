@@ -1,0 +1,36 @@
+name: CI/CD Pipeline
+
+# 1. بنحدد إمتى الـ Action ده يشتغل (هنا هيشتغل أول ما تعمل Push على فرع main)
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 2. خطوة سحب الكود من GitHub للسيرفر الوهمي
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # 3. خطوة تجهيز بيئة Node.js على السيرفر
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-node-version: 18 # أو الاصدار اللي شغال بيه 20 مثلاً
+        cache: 'npm'
+
+    # 4. خطوة تسطيب الـ Packages (الـ node_modules)
+    - name: Install dependencies
+      run: npm ci # الأمر ده أسرع وأضمن في الـ CI من npm install
+
+    # 5. تشغيل التيستات (اللي كتبناها سوا للـ Contact)
+    - name: Run tests
+      run: npm run test -- --watchAll=false # عشان يشتغل مرة واحدة ويقفل مش يفضل مستني
+
+    # 6. عمل الـ Build للتأكد إن مفيش أخطاء TypeScript أو قفشات في الكود
+    - name: Build project
+      run: npm run build
