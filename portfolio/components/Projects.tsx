@@ -2,10 +2,11 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import SectionHeader from "./SectionHeader";
+import Image from "next/image";
 
 const projects = [
   {
-    icon: "💪",
+    img: "/assets/gym.png",
     title: "Gym Website",
     description:
       "A modern, fully responsive fitness platform featuring dynamic workout programs, membership plans, trainer profiles, and an interactive BMI calculator with smooth user experience.",
@@ -15,7 +16,7 @@ const projects = [
     github: "https://github.com/rodinaalnaggar755-jpg/GYM-Website",
   },
   {
-    icon: "🏛️",
+    img: "/assets/egyptos.png",
     title: "Egyptos",
     description:
       "A comprehensive tourism platform showcasing Egypt's rich history, cultural heritage, and top destinations. Features interactive travel guides, historical insights, and a seamless user interface designed to enhance the tourist exploration experience.",
@@ -47,9 +48,16 @@ function ProjectCard({
         className="h-44 relative overflow-hidden"
         style={{ background: project.gradient }}
       >
-        <div className="absolute inset-0 flex items-center justify-center text-5xl opacity-30">
-          {project.icon}
-        </div>
+        <Image
+          src={project.img}
+          alt={project.title}
+          width={500}
+          height={500}
+          className="object-cover"
+        />
+        {/* <div className="absolute inset-0 flex items-center justify-center text-5xl opacity-30">
+          {project.img}
+        </div> */}
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
           <a
             href={project.LiveDemo}
