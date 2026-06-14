@@ -20,6 +20,13 @@ const experiences = [
     description: "Developed and executed targeted lead-generation campaigns across Meta , Google & LinkedIn Ads to drive sales for high-value real estate projects. Analyzed performance metrics, optimized ad spend, and implemented SEO strategies and maximize ROI.",
     tags: ["Meta Ads", "LinkedIn Ads", "Google Ads", "SEO"],
   },
+  {
+  date: "2025 - Present",
+  role: "Freelance Frontend Developer",
+  company: "Freelance (Upwork, Freelancer, Mostaql, Nafezly)",
+  description: "Developed and deployed responsive, high-performance web applications using modern technologies. Built clean, reusable UI components, integrated APIs, and optimized frontend performance to deliver seamless user experiences for international and local clients.",
+  tags: ["HTML & CSS", "JavaScript", "React.js", "Next.js", "Tailwind CSS"],
+},
  
 ];
 
